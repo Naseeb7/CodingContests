@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="links">
+            <a href="https://codingcontests.pradoshchand.repl.co/" class="active">Home</a>
+            <div class="dropdown" id="dropdown">
+                <button class="dropbtn" id="dropbtn" onclick="dropdown()"">Contests</button>
+                <div id="contestlinks" class="contestlinks" ></div>
+            </div>
+            <a href="https://kontests.net/api">Sources</a>
+        </div>
+        <div class="searchfilter">
+        <div class="searchbar">
+            <input type="text" id="search" onkeyup="searchfunction()" name="search" placeholder="Search...">
+        </div>
+        </div>
+        <div class="filtercontainer">
+            <label id="filter" class="filter">
+            <input type="checkbox" id="filterbtn" onclick="filter()" ></input>
+            <span class="checkmark"></span>
+                In 24-Hours
+            </label>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="header">Coding <br> Contests</h1>
+        <hr class="line">
+        <div class="content">
+            <h3 class="title">A one-stop-solution for all coding contests online</h3>
+            <p class="para">
+                This is website made for all code savvies out there. Find what you are looking for in a competition,
+                there's one for everybody.
+                A custom hand-picked list of the competitions you might like.
+                Oh! You don't like that, no worries, not that as well, keep looking because there ought to be one if you
+                keep scrolling.<br>
+            </p>
+                <span id="scroll"> So, go on, just scroll!</span>
+        </div>
+    </div>
+    <div id="searchresult"></div>
+    <div id="cardcontainer" class="cards"></div>
+    <script src="script.js"></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+</body>
+
+</html>
