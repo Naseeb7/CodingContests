@@ -59,8 +59,7 @@ let dropdown = () => {
 window.onclick=(event)=>{
     if(!event.target.matches(".dropbtn")){
         let dropdowns=document.getElementsByClassName("contestlinks")
-        let i
-        for(i=0;i<dropdowns.length;i++){
+        for(let i=0;i<dropdowns.length;i++){
             opendrop=dropdowns[i]
             if(opendrop.classList.contains("show")){
                 opendrop.classList.remove("show")

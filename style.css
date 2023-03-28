@@ -1,216 +1,65 @@
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+/* body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+} */
+.navbar {
+  /*     border: 2px solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 5px; */
+  width: 100%;
+  background-color: #ee9b9b;
+  font-family: "Quicksand", sans-serif;
 }
-.navbar{
-/*     border: 2px solid; */
-    display: flex;
-    flex-direction: row;
-     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
-    background-color: #ee9b9b;
-    font-family: 'Quicksand', sans-serif;
+.links {
+  display: flex;
 }
-.links{
-    display: flex;
+.links a:link {
+  /*     border: 2px solid #fbff00; */
+  text-decoration: none;
+  padding: 10px 12px;
+  color: black;
+  transition: 0.5s;
 }
-.links a:link{
-/*     border: 2px solid #fbff00; */
-    text-decoration: none;
-    padding: 10px 12px;
-    color: black;
-    transition: 0.5s;
+.links a:visited {
+  color: purple;
 }
-.links a:visited{
-    color:purple;
+.links a:hover {
+  background-color: #eebfbf;
+  color: black;
 }
-.links a:hover{
-    background-color: #eebfbf;
-    color: black;
+.dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
 }
-.dropdown{
-    display: flex;
-    flex-wrap: wrap;
-    border: none;
+.dropbtn {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  background-color: #ee9b9b;
+  font-size: initial;
 }
-.dropbtn{
-    display: flex;
-    align-items: center;
-    border: none;
-    background-color: #ee9b9b;
-    font-size: initial;
+.dropbtn:hover {
+  background-color: #eebfbf;
+  cursor: pointer;
 }
-.dropbtn:hover{
-    background-color: #eebfbf;
-    cursor: pointer;
-}
-.searchfilter{
-    display: flex;
-    flex-direction: row;
-}
-
-/* Checkbox */
-.filtercontainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    user-select: none;
-}
-.filter{
-/*     border: 2px solid; */
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: .5em;
-}
-#filterbtn{
-    visibility: hidden;
-    cursor: pointer;
-}
-.checkmark{
-/*     border:2px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1.2rem;
-    width: 1.2rem;
-    border-radius: 2rem;
-    background-color: #dad7d7;
-    float: left;
-    margin-right: .5em;
-}
-.filter:hover input~.checkmark{
-    background-color: #eebfbf;
-}
-.filter input:checked~.checkmark{
-    background: #eebfbf;
-}
-.checkmark:after{
-    content: "";
+.contestlinks {
     display: none;
-}
-.filter input:checked~.checkmark:after{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.filter .checkmark:after{
-/*     border: 2px solid black; */
-    height: .75rem;
-    width: .75rem;
-    border-radius: 1rem;
-    background-color: #73d973;
-    border-style: groove;
-}
-.searchbar{
-    display: flex;
-    padding: 5px;
-}
-#search{
-    font-size: 15px;
-    padding: 5px;
-    border: none;
-    border-radius: 20px;
-}
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-}
-.header{
-/*     border: 2px solid; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    color: #9494d6;
-    padding: 10px;
-    font-size: 50px;
-    text-align: right;
-    font-family: 'Righteous', cursive;
-    flex-basis: 20%;
-}
-
-hr {
-    width: 2px; 
-    background-color: black;
-}
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-basis: 80%;
-    justify-content: space-between;
-    padding: 10px;
-}
-.title{
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    color: #426654;
-}
-.para{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-family: 'Nunito Sans', sans-serif;
-    text-align: left;
-}
-#scroll{
-    color: red;
-    font-family: 'Montserrat', sans-serif;
-}
-.cards{
-/*     border: 2px solid; */
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-}
-.card{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 5px;
-    padding: 5px;
-    box-shadow: 8px 5px 5px 5px #9c9c9c;
-    width:22rem;
-}
-.card:hover{
-    box-shadow: 5px 5px 2px 1px #616161;
-}
-#randomimg{
-    display: flex;
-    flex-wrap: wrap;
-    width: 22rem;
-    height: 20rem;
-}
-.card-body{
-/*     border: 2px solid; */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-family: 'Nunito Sans', sans-serif;
-}
-.card-title{
-    color: red;
-}
-.contestlinks{
-    display: none;
-    
-}
-.show{
+  }
+  .show {
     display: flex;
     flex-direction: column;
     width: 15rem;
@@ -220,21 +69,186 @@ hr {
     overflow: auto;
     background-color: #bde5df;
     border-radius: 10px;
-    opacity: .8;
-    font-family: 'Quicksand', sans-serif;
-}
-::-webkit-scrollbar{
-    width: .75em;
-}
-::-webkit-scrollbar-track{
-    background-color:#959797 ;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #cefdf6;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: #34bcaf;
+    opacity: 0.8;
+    font-family: "Quicksand", sans-serif;
+    animation: dropdown 0.5s ease-in;
+    transform-origin: top center;
+  }
+.searchfilter {
+  display: flex;
+  flex-direction: row;
 }
 
+/* Checkbox */
+.filtercontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  user-select: none;
+}
+.filter {
+  /*     border: 2px solid; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5em;
+}
+#filterbtn {
+  visibility: hidden;
+  cursor: pointer;
+}
+.checkmark {
+  /*     border:2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 2rem;
+  background-color: #dad7d7;
+  float: left;
+  margin-right: 0.5em;
+}
+.filter:hover input ~ .checkmark {
+  background-color: #eebfbf;
+}
+.filter input:checked ~ .checkmark {
+  background: #eebfbf;
+}
+.checkmark:after {
+  content: "";
+  display: none;
+}
+.filter input:checked ~ .checkmark:after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter .checkmark:after {
+  /*     border: 2px solid black; */
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 1rem;
+  background-color: #73d973;
+  border-style: groove;
+}
+.searchbar {
+  display: flex;
+  padding: 5px;
+}
+#search {
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+.header {
+  /*     border: 2px solid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: #9494d6;
+  padding: 10px;
+  font-size: 50px;
+  text-align: right;
+  font-family: "Righteous", cursive;
+  flex-basis: 20%;
+}
+
+hr {
+  width: 2px;
+  background-color: black;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 80%;
+  justify-content: space-between;
+  padding: 10px;
+}
+.title {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  color: #426654;
+}
+.para {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: left;
+}
+#scroll {
+  color: red;
+  font-family: "Montserrat", sans-serif;
+}
+.cards {
+  /*     border: 2px solid; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 8px 5px 5px 4px #9c9c9c;
+  width: 22rem;
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 5px 5px 2px 1px #616161;
+}
+#randomimg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 22rem;
+  height: 20rem;
+}
+.card-body {
+  /*     border: 2px solid; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Nunito Sans", sans-serif;
+}
+.card-title {
+  color: red;
+}
+::-webkit-scrollbar {
+  width: 0.75em;
+}
+::-webkit-scrollbar-track {
+  background-color: #959797;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cefdf6;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #34bcaf;
+}
+@keyframes dropdown {
+    0% {
+        transform: rotateY(90deg)
+    }
+    80% {
+        transform: rotateY(-10deg)
+    }
+    100% {
+        transform: rotateY(0)
+    }
+}
